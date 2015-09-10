@@ -1,0 +1,36 @@
+nav ul {
+	padding: 0;
+
+
+		li {
+		float:left;
+		list-style:none;
+		margin-right:.5em;
+			a {
+			@include shadow(2px,2px,3px,rgba(11,96,176,0.3));
+			padding: $padding;
+			background: #0b60b0;
+			border-radius: $border-radius;
+			transition: all 1s ease-in-out;
+			&:hover {
+				background:pink;
+					}
+			}
+	}
+
+
+
+	/* Misc.
+	------------------------------------------*/
+
+	.clearfix:after {
+		content:".";
+		display:block;
+		height: 0;
+		clear:both;
+		visibility:hidden;
+	}
+
+
+} 
+

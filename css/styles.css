@@ -1,0 +1,121 @@
+/*
+
+Author: Kate;
+
+*/
+/*
+
+Variables
+
+*/
+body {
+  background: #043e7c;
+  font-size: 16px;
+  margin: 0; }
+
+a {
+  color: #ffffff;
+  text-decoration: none; }
+
+a:hover {
+  color: crimson; }
+
+/* Layout
+-----------------------------------------------------*/
+header,
+.container,
+footer {
+  margin: 0 auto;
+  width: 88%;
+  max-width: 960px; }
+
+.wrapper {
+  background: #ffffff;
+  padding: 1em 0; }
+
+p, h2, footer small,
+h1,
+nav {
+  font-family: Helvetica, Arial, sans-serif; }
+
+h2 {
+  color: #043d7a; }
+
+footer small,
+h1,
+nav {
+  color: #ffffff; }
+
+/* Slideshow ----------------------*/
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0; }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left; }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0; }
+
+/* Slideshow Don't know where to paste this----------------------
+
+  $(".rslides").responsiveSlides({
+  auto: true,             // Boolean: Animate automatically, true or false
+  speed: 500,            // Integer: Speed of the transition, in milliseconds
+  timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
+  pager: false,           // Boolean: Show pager, true or false
+  nav: false,             // Boolean: Show navigation, true or false
+  random: false,          // Boolean: Randomize the order of the slides, true or false
+  pause: false,           // Boolean: Pause on hover, true or false
+  pauseControls: true,    // Boolean: Pause when hovering controls, true or false
+  prevText: "Previous",   // String: Text for the "previous" button
+  nextText: "Next",       // String: Text for the "next" button
+  maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
+  navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
+  manualControls: "",     // Selector: Declare custom pager navigation
+  namespace: "rslides",   // String: Change the default namespace used
+  before: function(){},   // Function: Before callback
+  after: function(){}     // Function: After callback
+});
+
+*/
+nav ul {
+  padding: 0;
+  /* Misc.
+  ------------------------------------------*/ }
+  nav ul li {
+    float: left;
+    list-style: none;
+    margin-right: .5em; }
+    nav ul li a {
+      box-shadow: 2px 2px 3px rgba(11, 96, 176, 0.3);
+      padding: 0.5em 1em;
+      background: #0b60b0;
+      border-radius: 5px;
+      transition: all 1s ease-in-out; }
+      nav ul li a:hover {
+        background: pink; }
+  nav ul .clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
